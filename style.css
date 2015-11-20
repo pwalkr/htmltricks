@@ -1,0 +1,42 @@
+* {
+	display: block;
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+header {
+	background-color:#444;
+	height: 30px;
+	width: 100%;
+	position: fixed;
+}
+
+header div {
+	float: left;
+	vertical-align: middle;
+}
+
+header div span {
+	color: white;
+}
+
+.flyout {
+	height: 50px;
+	width: 50px;
+	opacity: 0;
+	background-color: blue;
+}
+
+.flyout:hover {
+	opacity: 1;
+	/*animation: fade 0.5s infinite;*/
+	animation-name: fade;
+	animation-duration: 0.2s;
+	animation-iteration-count: 1;
+}
+
+@keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1}
+}
