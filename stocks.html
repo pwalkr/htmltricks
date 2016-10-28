@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$.get("https://query1.finance.yahoo.com/v8/finance/chart/VZ", {
+	formatted: true,
+	crumb: "l5CO0bGjW7z",
+	lang: "en-US",
+	region: "US",
+	interval: "1d",
+	events: "div%7Csplit",
+	range: "1y",
+	corsDomain: "finance.yahoo.com"
+}, function (response) {
+	console.log(response)
+})
+</script>
+</body>
+</html>
