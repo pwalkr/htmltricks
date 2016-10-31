@@ -4,6 +4,13 @@
 </head>
 <body>
 <script type="text/javascript">
+$.get("http://finance.yahoo.com/d/quotes.csv", {
+	s: "main",
+	f: "snpdr"
+}, function (response) {
+	console.log(response)
+})
+/*
 $.get("https://query1.finance.yahoo.com/v8/finance/chart/VZ", {
 	formatted: true,
 	crumb: "l5CO0bGjW7z",
@@ -16,6 +23,7 @@ $.get("https://query1.finance.yahoo.com/v8/finance/chart/VZ", {
 }, function (response) {
 	console.log(response)
 })
+*/
 </script>
 </body>
 </html>
